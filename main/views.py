@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 def weather_view(request):
     city = request.POST.get("city", "Hyderabad")  # Default city if nothing entered
-    api_key = "467fa89b03484f8d2633cb621dfb6e64"
+    api_key = "your own api key,get it from open weather app"
     base_url = "http://api.openweathermap.org/data/2.5/weather"
 
     weather_data = {}
